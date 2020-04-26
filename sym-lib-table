@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name tp4056)(type Legacy)(uri /home/arthur/kiCad/CHIC_PCB1/tp4056.lib)(options "")(descr ""))
+  (lib (name CHIC_librairie1)(type Legacy)(uri ${KIPRJMOD}/CHIC_librairie1.lib)(options "")(descr ""))
+  (lib (name esp_lib)(type Legacy)(uri /home/arthur/kiCad/CHIC_PCB1/kicad-ESP8266/ESP8266.lib)(options "")(descr ""))
+)
