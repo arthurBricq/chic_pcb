@@ -966,4 +966,8 @@ Text Label 6250 5900 0    50   ~ 0
 Text Label 3100 4900 0    50   ~ 0
 5v
 NoConn ~ 6950 3450
+Text Notes 450  -300 0    50   ~ 0
+test
+Text Notes 1050 -150 0    50   ~ 0
+fgdhgfd
 $EndSCHEMATC
