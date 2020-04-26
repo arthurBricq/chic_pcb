@@ -227,21 +227,10 @@ L Device:C C6
 U 1 1 5EA16A6B
 P 9900 5450
 F 0 "C6" H 10015 5496 50  0000 L CNN
-F 1 "C" H 10015 5405 50  0000 L CNN
+F 1 "40 nF" H 10015 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9938 5300 50  0001 C CNN
 F 3 "~" H 9900 5450 50  0001 C CNN
 	1    9900 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R Rm1
-U 1 1 5EA16CDE
-P 9900 5900
-F 0 "Rm1" H 9970 5946 50  0000 L CNN
-F 1 "R" H 9970 5855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 5900 50  0001 C CNN
-F 3 "~" H 9900 5900 50  0001 C CNN
-	1    9900 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -299,13 +288,9 @@ Wire Wire Line
 	8900 4800 8900 4500
 Wire Wire Line
 	8900 5750 8900 6050
-Wire Wire Line
-	8900 6050 9900 6050
 Connection ~ 8900 6050
 Wire Wire Line
 	8900 6050 8900 6200
-Wire Wire Line
-	9900 5750 9900 5650
 Wire Wire Line
 	9900 5300 9900 5150
 Wire Wire Line
@@ -325,7 +310,6 @@ Wire Wire Line
 	9600 5550 9600 5650
 Wire Wire Line
 	9600 5650 9900 5650
-Connection ~ 9900 5650
 Wire Wire Line
 	9900 5650 9900 5600
 $Comp
@@ -970,4 +954,8 @@ Text Notes 450  -300 0    50   ~ 0
 test
 Text Notes 1050 -150 0    50   ~ 0
 fgdhgfd
+Text Notes 10000 5800 0    50   ~ 0
+C6 is usually between 2 and 50 nF, \nhigher values increase the sensitivity (Datasheet)\nTry to use X7R or X5R type ceramic capacitors as they are more stable.
+Text Notes 10100 5150 0    50   ~ 0
+Not sure of resistor value ASK BEUCHAT\nHowever it is not critical, as it will only \naffect the charge/discharge time of the \nelectrode. As a rule of thumb: R_series * (C_electrode + C_hand) = 5*chargingTime\nbut we can't really measure C_electrode
 $EndSCHEMATC
